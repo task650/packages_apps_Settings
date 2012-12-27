@@ -340,4 +340,7 @@
     <string name="battery_prefs_title">Options</string>
     <string name="battery_stats_title">Statistics</string>
 
+    <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
+    <string name="accessibility_home_button_answers_call_prerefence_title">Home button answers call</string>
+
 </resources>
