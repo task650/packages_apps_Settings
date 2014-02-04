@@ -79,6 +79,16 @@
                 android:targetPackage="com.aokp.romcontrol" />
     </header>
 
+    <!-- Kernel control -->
+    <header android:id="@+id/performance"
+            android:title="@string/performance_title"
+            android:icon="@drawable/ic_settings_performance" >
+        <intent
+                android:action="com.bigeyes0x0.trickstermod.action.LAUNCH_SETTINGS"
+                android:targetPackage="com.bigeyes0x0.trickstermod"
+                android:targetClass="com.bigeyes0x0.trickstermod.main.ActivityTricksterMod" />
+    </header>
+
     <header android:id="@+id/advanced_settings"
             android:title="@string/advanced_settings_title"
             android:icon="@drawable/ic_settings_advanced">
