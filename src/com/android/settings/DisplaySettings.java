@@ -64,8 +64,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_180 = "180";
     private static final String ROTATION_ANGLE_270 = "270";
 
-    private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
-
     private PreferenceScreen mDisplayRotationPreference;
     private FontDialogPreference mFontSizePref;
     private CheckBoxPreference mNotificationPulse;
