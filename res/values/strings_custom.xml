@@ -459,4 +459,9 @@
     <string name="lock_pattern_size_4">4x4</string>
     <string name="lock_pattern_size_5">5x5</string>
     <string name="lock_pattern_size_6">6x6</string>
+
+    <!-- Media format filesystems -->
+    <string name="media_format_advanced">Advanced formatting options</string>
+    <string name="media_format_select_fs">Select a filesystem type:</string>
+
 </resources>
