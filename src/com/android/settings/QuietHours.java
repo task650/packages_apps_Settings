@@ -33,6 +33,8 @@ public class QuietHours extends SettingsPreferenceFragment implements
 
     private static final String KEY_QUIET_HOURS_ENABLED = "quiet_hours_enabled";
 
+    private static final String KEY_QUIET_HOURS_SYSTEM = "quiet_hours_system";
+
     private static final String KEY_QUIET_HOURS_NOTIFICATIONS = "quiet_hours_notifications";
     
     private static final String KEY_QUIET_HOURS_RINGER = "quiet_hours_ringer";
@@ -46,6 +48,8 @@ public class QuietHours extends SettingsPreferenceFragment implements
     private static final String KEY_QUIET_HOURS_TIMERANGE = "quiet_hours_timerange";
 
     private CheckBoxPreference mQuietHoursEnabled;
+
+    private CheckBoxPreference mQuietHoursSystem;
 
     private CheckBoxPreference mQuietHoursNotifications;
     
@@ -94,6 +98,14 @@ public class QuietHours extends SettingsPreferenceFragment implements
             } else {
                 mQuietHoursDim.setChecked(Settings.AOKP.getInt(resolver, Settings.AOKP.QUIET_HOURS_DIM, 0) == 1);
             }
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mQuietHoursTimeRange != null) {
+            mQuietHoursTimeRange.updatePreferenceViews();
         }
     }
 
